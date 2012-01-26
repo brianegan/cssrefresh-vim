@@ -4,7 +4,7 @@ function! s:CRefresh()
 
     let fn = expand("%:t:r")
     let cmdline = cmd . ' ' . fn
-    exec '!' . cmdline . ' 2>&1 >/dev/null'
+    exec 'silent !' . cmdline . ' 2>&1 >/dev/null'
 endfunction
 
 function! s:CAutoRefresh()

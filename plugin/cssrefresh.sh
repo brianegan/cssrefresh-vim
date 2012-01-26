@@ -1,5 +1,5 @@
 #!/bin/sh
-osascript -s o << END
+arch -i386 osascript -s o << END
     tell application "Safari"
       do JavaScript "
         (function(\$) {
